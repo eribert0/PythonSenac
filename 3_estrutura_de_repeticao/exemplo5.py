@@ -1,7 +1,9 @@
 #tabuada 
+num = 0;
+while num < 1 or num > 10:
+    num = int(input("Digite um numero: ")); 
 
-num = int(input("Digite um numero entre 1 e 10\n"));
-
+print(f"Tabuada de {num}: ")
 for i in range(1, 11):
     resultado = num * i;
     print(f"{num} * {i} = {resultado}")
