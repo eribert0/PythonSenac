@@ -20,3 +20,11 @@ print("Idade: ", idade)
 print("Ano de nascimento: ", ano_de_nascimento)
 print("É maior de idade?", maior_de_idade)
 print('Altura em metros: ', altura_metros)
+"""
+nome = input('Digte o nome: ')
+pesquisar = input('Digite o que voce quer saber se tem no nome: ')
+if pesquisar in nome:
+    print(f'tem {pesquisar} em {nome}')
+else:
+    print(f'nao tem {pesquisar} em {nome}')
+"""
