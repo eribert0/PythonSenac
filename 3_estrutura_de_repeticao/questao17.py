@@ -1,4 +1,4 @@
-#fatorial
+#fatorial (a concluir exercício)
 num = int(input('Digite o numero que você queira saber o fatorial: '))
 
 cont = 0
