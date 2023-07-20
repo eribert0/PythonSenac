@@ -6,7 +6,6 @@ class Carro:
     def acalerar(self):
         print(f'{self.nome} está acelerando...')
 
-
 fusca = Carro('Fusca')
 print(fusca.nome)
 fusca.acalerar()
