@@ -1,14 +1,14 @@
 class bombaCombustivel:
     def __init__(self, tipoCombustivel, valorLitro, quantidadeCombustivel):
-    self.tipoCombustivel = tipoCombustivel # tipo de combustivel
-    self.valorLitro = valorLitro  # Valor do litro 
-    self.quantidadeCombustivel = quantidadeCombustivel #quantidade de combustível total na bomba
+        self.tipoCombustivel = tipoCombustivel # tipo de combustivel
+        self.valorLitro = valorLitro  # Valor do litro 
+        self.quantidadeCombustivel = quantidadeCombustivel #quantidade de combustível total na bomba
 
     def abastecer_por_valor(self, valor):  
-        return f'{valor / self.valorLitro} '
+        return f'{valor / self.valorLitro}'
 
     def abastecer_por_litro(self, quantidadeLitros):
-        return quantidadeLitros / 
+        return quantidadeLitros 
     
     def alterar_valor(self, valorLitro):
         self.valorLitro = valorLitro
