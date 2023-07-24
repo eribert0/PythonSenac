@@ -5,4 +5,4 @@ class Cliente:
         self.dataNasc = dataNasc
 
 c1 = Cliente('Roger', '123456789-10', '09/03/2003')
-print(c1.nome, c1.cpf, c1.dataNasc)
+print(f'Nome: {c1.nome}'\nCPF:{c1.cpf}\nNascimento: {c1.dataNasc})
