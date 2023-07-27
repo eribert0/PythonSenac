@@ -17,7 +17,7 @@ class Main:
         print(self.processador_obj.metodo_pro())
         print('-----------------------------------\n')
         
-1
+
 computador1 = Main(Armazenamento(tipo='SSD', capacidade=480), Memoria(marca='HyperX', capacidade=8), Processador(modelo='Intel i3', velocidade='3.40'))
 computador1.metodo_main()
 
