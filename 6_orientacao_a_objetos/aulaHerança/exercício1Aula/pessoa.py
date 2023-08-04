@@ -5,5 +5,5 @@ class Pessoa:
         self.salario = float
 
     def mostrar_informacoes(self):
-        print(f'Nome: {self.nome}\nCPF: {self.cpf}\nSalário: {self.salario}')
+        print(f'\nNome: {self.nome}\nCPF: {self.cpf}\nSalário: {self.salario}')
     
