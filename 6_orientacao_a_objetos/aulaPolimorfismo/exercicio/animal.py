@@ -45,6 +45,7 @@ class Cachorro(Mamifero):
     def falar(self):
         print('Cachorro está latindo...')
 
-
 class Gato(Mamifero):
-    
+    def __init__(self):
+        super().__init__(nome)
+        self.nome = nome
