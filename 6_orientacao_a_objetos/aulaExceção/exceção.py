@@ -12,8 +12,8 @@ else:
     print('Continua 1')
 finally:
     print('Continua 2')
-
 """
+
 class ExcecaoError(Exception):
     def __init__(self, message):
         super().__init__(message)

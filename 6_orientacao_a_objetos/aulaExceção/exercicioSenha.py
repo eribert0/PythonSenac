@@ -3,7 +3,8 @@ class Usuario():
     def __init__(self, login, senha):
         self.login = login
         self.senha = senha
-
+        #self.email = str
+        
     def validar_senha(self):
         while True:
             try:

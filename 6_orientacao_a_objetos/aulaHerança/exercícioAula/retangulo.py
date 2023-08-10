@@ -8,5 +8,4 @@ class Retangulo(Forma):
 
     def areaRetangulo(self):
         print(f'Área: {self.base * self.altura}')
-    
-    
+

@@ -5,4 +5,3 @@ class Forma:
     def area(self):
         return 0
 
-
