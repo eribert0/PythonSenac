@@ -35,9 +35,12 @@ class bombaCombustivel:
         print(f'Bomba com {self.quantidadeCombustivel} litros de combustível')
     """
     def abastecer_por_valor(self, valor):
-        r = valor/self.valorLitro
-        self.quantidadeCombustivel -= r
-        print(f'O carro foi abastecido com: {r} litros')
+        litros_abastecidos = valor/self.valorLitro
+        if litros_abastecidos <= self.quantidadeCombustivel:
+            self.quantidadeCombustivel -= litros_abastecidos
+            print(f'O carro foi abastecido com: {litros_abastecidos:.2f} litros')
+        else:
+            print('Não há combustível suficiente na bomba.')
 
     def abastecerPorLitro(self, litros):
         print(f'Valor total: {litros * self.valorLitro}')
@@ -55,8 +58,8 @@ class bombaCombustivel:
 #Testando objeto bomba
 bomba = bombaCombustivel(valorLitro=5.60, tipoCombustivel='Gasolina', quantidadeCombustivel=100)
 print(f'Combustível disponível na bomba: {bomba.quantidadeCombustivel} litros')
-bomba.abastecer_por_valor(int(input('Digite valor do abastecimento: ')))
+bomba.abastecer_por_valor(float(input('Digite valor do abastecimento: ')))
 print(f'Combustível disponível na bomba: {bomba.quantidadeCombustivel} litros')
 bomba.alterarValor(float(input('Digite o preço por litro do combustível: ')))
-bomba.abastecer_por_valor(int(input('Digite valor do abastecimento: ')))
+bomba.abastecer_por_valor(float(input('Digite valor do abastecimento: ')))
 print(f'Combustível disponível na bomba: {bomba.quantidadeCombustivel} litros')
